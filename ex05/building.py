@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 import sys
-import string
 
 
 def count(str):
+    count.__doc__ = """Iterates through the string and
+                    counts each character by category."""
     chars = len(str)
     up = 0
     lo = 0
@@ -13,15 +14,16 @@ def count(str):
     i = 0
 
     while i < len(str):
-        if str[i] in string.digits:
+        if '9' >= str[i] >= '0':
             di += 1
-        elif str[i] in string.ascii_uppercase:
+        elif 'Z' >= str[i] >= 'A':
             up += 1
-        elif str[i] in string.ascii_lowercase:
+        elif 'z' >= str[i] >= 'a':
             lo += 1
-        elif str[i] in string.whitespace:
+        elif '\b' <= str[i] <= ' ':
             sp += 1
-        elif str[i] in string.punctuation:
+        elif '!' <= str[i] <= '/' or ':' <= str[i] <= '@' \
+                or '[' <= str[i] <= '`' or '{' <= str[i] <= '~':
             pu += 1
         i += 1
     print(f"The text contains {chars} characters:")
@@ -41,7 +43,7 @@ def main():
         try:
             str = input("What is the text to count? ")
         except EOFError:
-            print("\nYou failed to provide a string to count. No cookie for you.")
+            print("\nYou failed to provide a string to count.")
             return
     else:
         str = sys.argv[1]
