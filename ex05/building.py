@@ -38,7 +38,11 @@ def main():
     characters, punctuation characters, digits and spaces."""
     assert len(sys.argv) < 3, "Too many arguments provided"
     if len(sys.argv) != 2 or sys.argv[1] is None:
-        str = input("What is the text to count? ")
+        try:
+            str = input("What is the text to count? ")
+        except EOFError:
+            print("\nYou failed to provide a string to count. No cookie for you.")
+            return
     else:
         str = sys.argv[1]
     count(str)
