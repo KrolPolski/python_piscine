@@ -2,28 +2,24 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    Hello.py                                           :+:      :+:    :+:    #
+#    tester.py                                          :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: rboudwin <rboudwin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/06/10 09:53:59 by rboudwin          #+#    #+#              #
-#    Updated: 2024/06/10 09:53:59 by rboudwin         ###   ########.fr        #
+#    Created: 2024/06/10 10:51:37 by rboudwin          #+#    #+#              #
+#    Updated: 2024/06/10 10:51:42 by rboudwin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+from find_ft_type import all_thing_is_obj
 ft_list = ["Hello", "tata!"]
 ft_tuple = ("Hello", "toto!")
 ft_set = {"Hello", "tutu!"}
 ft_dict = {"Hello" : "titi!"}
-
-ft_list[1] = "World"
-ft_change_tuple = list(ft_tuple)
-ft_change_tuple[1] = "Finland"
-ft_tuple = tuple(ft_change_tuple)
-ft_set.remove("tutu!")
-ft_set.add("Helsinki")
-ft_dict["Hello"] = "Hive"
-print(ft_list)
-print(ft_tuple)
-print(ft_set)
-print(ft_dict)
+all_thing_is_obj(ft_list)
+all_thing_is_obj(ft_tuple)
+all_thing_is_obj(ft_set)
+all_thing_is_obj(ft_dict)
+all_thing_is_obj("Brian")
+all_thing_is_obj("Toto")
+print(all_thing_is_obj(10))
