@@ -4,10 +4,10 @@
 #                                                         :::      ::::::::    #
 #    Hello.py                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rboudwin <rboudwin@student.42.fr>          +#+  +:+       +#+         #
+#    By: rboudwin <rboudwin@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/06/10 09:53:59 by rboudwin          #+#    #+#              #
-#    Updated: 2024/06/10 09:53:59 by rboudwin         ###   ########.fr        #
+#    Created: 2024/06/10 11:56:56 by rboudwin          #+#    #+#              #
+#    Updated: 2024/06/10 11:57:06 by rboudwin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

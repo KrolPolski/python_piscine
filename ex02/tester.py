@@ -4,12 +4,13 @@
 #                                                         :::      ::::::::    #
 #    tester.py                                          :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rboudwin <rboudwin@student.42.fr>          +#+  +:+       +#+         #
+#    By: rboudwin <rboudwin@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/06/10 10:51:37 by rboudwin          #+#    #+#              #
-#    Updated: 2024/06/10 10:51:42 by rboudwin         ###   ########.fr        #
+#    Created: 2024/06/10 11:58:20 by rboudwin          #+#    #+#              #
+#    Updated: 2024/06/10 11:58:21 by rboudwin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
 
 from find_ft_type import all_thing_is_obj
 ft_list = ["Hello", "tata!"]

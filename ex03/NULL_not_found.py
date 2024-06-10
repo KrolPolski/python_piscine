@@ -4,12 +4,14 @@
 #                                                         :::      ::::::::    #
 #    NULL_not_found.py                                  :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rboudwin <rboudwin@student.42.fr>          +#+  +:+       +#+         #
+#    By: rboudwin <rboudwin@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/06/10 11:07:42 by rboudwin          #+#    #+#              #
-#    Updated: 2024/06/10 11:07:43 by rboudwin         ###   ########.fr        #
+#    Created: 2024/06/10 11:58:41 by rboudwin          #+#    #+#              #
+#    Updated: 2024/06/10 11:58:45 by rboudwin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+
 
 def NULL_not_found(object: any) -> int:
     o_type = type(object)
