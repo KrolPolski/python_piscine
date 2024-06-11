@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 
 
 def ft_invert(array):
+    ft_invert.__doc__ = "Inverts each pixel of an image"
     inv_img = (array)
     print("Beginning inversion process")
     a = 0
@@ -24,6 +25,7 @@ def ft_invert(array):
 
 
 def ft_red(array):
+    ft_red.__doc__ = "disables green and blue channels"
     inv_img = (array)
     print("Beginning reddening process")
     a = 0
@@ -43,6 +45,7 @@ def ft_red(array):
 
 
 def ft_green(array):
+    ft_green.__doc__ = "disables red and blue channels"
     inv_img = (array)
     print("Beginning greening process")
     a = 0
@@ -62,6 +65,7 @@ def ft_green(array):
 
 
 def ft_blue(array):
+    ft_blue.__doc__ = "disables red and green channels"
     inv_img = (array)
     print("Beginning blueing process")
     a = 0
@@ -81,6 +85,8 @@ def ft_blue(array):
 
 
 def ft_grey(array):
+    ft_grey.__doc__ = "Sets green and blue channels \
+        to the same value as red, to acheive grayscale"
     inv_img = (array)
     print("Beginning graying process")
     a = 0
