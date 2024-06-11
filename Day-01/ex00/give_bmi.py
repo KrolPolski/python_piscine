@@ -22,11 +22,17 @@ def give_bmi(height: list[int | float], weight: list[int | float]) \
     print("Must have valid data, moving forward")
     result = []
     for i in range(usable_len):
-        result.append(weight[i] / (height[i] ** 2))
+        try:
+            result.append(weight[i] / (height[i] ** 2))
+        except ZeroDivisionError:
+            print("Cannot divide by 0")
+            result.append(None)
     return result
 
 
 def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
+    apply_limit.__doc__ = """Returns a list of boolean values based on
+        whether the items in the list are over the defined limit"""
     assert type(bmi) is list, "BMI parameter must be a list"
     assert type(limit) is int or type(limit) is float, "Limit must be a number"
     result = []
@@ -39,7 +45,7 @@ def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
 
 
 def main():
-    result = give_bmi([1.65, 2, 2.1], [100, 120])
+    result = give_bmi([1.65, 0, 2, 2.1], [100, 120])
     print(result)
 
 
