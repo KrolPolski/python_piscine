@@ -3,7 +3,7 @@
 import imageio.v3 as iio
 
 
-def ft_load(path: str):
+def ft_load(path: str) -> str:
     ft_load.__doc__ = \
         """Prints shape and pixel content of desired image"""
     try:
