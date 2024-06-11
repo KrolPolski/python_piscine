@@ -3,7 +3,8 @@
 from load_image import ft_load
 import matplotlib.pyplot as plt
 
-def ft_invert(array):# -> array:
+
+def ft_invert(array):
     inv_img = (array)
     print("Beginning inversion process")
     a = 0
@@ -20,6 +21,8 @@ def ft_invert(array):# -> array:
         a += 1
     print("Inversion complete")
     return inv_img
+
+
 def ft_red(array):
     inv_img = (array)
     print("Beginning reddening process")
@@ -37,8 +40,9 @@ def ft_red(array):
         a += 1
     print("Reddening complete")
     return inv_img
-#your code here
-def ft_green(array):# -> array:
+
+
+def ft_green(array):
     inv_img = (array)
     print("Beginning greening process")
     a = 0
@@ -55,8 +59,9 @@ def ft_green(array):# -> array:
         a += 1
     print("greening complete")
     return inv_img
-#your code here
-def ft_blue(array):# -> array:
+
+
+def ft_blue(array):
     inv_img = (array)
     print("Beginning blueing process")
     a = 0
@@ -73,16 +78,32 @@ def ft_blue(array):# -> array:
         a += 1
     print("Blueing complete")
     return inv_img
-#your code here
-#def ft_grey(array) -> array:
-#your code here
+
+
+def ft_grey(array):
+    inv_img = (array)
+    print("Beginning graying process")
+    a = 0
+    b = 0
+    c = 1
+    while a < len(inv_img):
+        while b < len(inv_img[0]):
+            while c < len(inv_img[0][0]):
+                inv_img[a][b][c] = inv_img[a][b][0]
+                c += 1
+            c = 1
+            b += 1
+        b = 0
+        a += 1
+    print("Graying complete")
+    return inv_img
+
 
 def main():
     img = ft_load('landscape.jpg')
-    mod_img = ft_blue(img)
+    mod_img = ft_grey(img)
     plt.imshow(mod_img)
     plt.show()
-
 
 
 if __name__ == '__main__':
